@@ -21,11 +21,11 @@ namespace Winforms
             InitializeComponent();
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
         }
     }
