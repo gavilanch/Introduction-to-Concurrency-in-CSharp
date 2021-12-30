@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +22,7 @@ namespace Winforms
         {
             InitializeComponent();
             // Change the apiURL for your own
-            apiURL = "https://localhost:44313";
+            apiURL = "https://localhost:44313/api";
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
@@ -35,7 +34,7 @@ namespace Winforms
             //await new UI_Not_Freezes().AsyncVersion();
 
             // Video: Task and Task That Returns a Value
-            //await new Task_And_TaskOfT(apiURL).btnStart_Click(txtInput);
+            //await new Task_And_TaskOfT(apiURL).btnStart_Click(txtInput); 
 
             // Video: Task with Errors
             //await new Task_With_Errors(apiURL).btnStart_Click(txtInput);
@@ -47,7 +46,7 @@ namespace Winforms
             //await new Task_Run(apiURL).btnStart_Click();
 
             // Video: Limiting the Amount of Concurrent Tasks - SemaphoreSlim
-            //await new SemaphoreExample(apiURL).btnStart_Click();
+            await new SemaphoreExample(apiURL).btnStart_Click();
 
             // Video: Using the Response Task.WhenAll
             //await new Response_Of_Task_WhenAll(apiURL).btnStart_Click();
